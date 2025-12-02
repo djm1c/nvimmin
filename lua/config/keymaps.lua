@@ -46,6 +46,14 @@ vim.keymap.set("n", "<leader>i", function()
 end)
 
 -- navigate buffers
-vim.keymap.set("n", "<S-l>", ":bnext<CR>", { desc = "Next buffer" })
-vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { desc = "Previous buffer" })
-vim.keymap.set("n", "<leader>x", "<cmd> bp|sp|bn|bd! <CR>", { desc = "Close buffer" })
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set("n", "<S-l>", "<Cmd>BufferNext<CR>", { desc = "Next buffer" })
+vim.keymap.set("n", "<S-h>", "<Cmd>BufferPrevious<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<leader>x", "<Cmd>BufferClose<CR>", { desc = "Close buffer" })
+vim.keymap.set("n", "<leader>bp", "<Cmd>BufferPin<CR>", opts)
+vim.keymap.set("n", "<leader>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
+vim.keymap.set("n", "<leader>bn", "<Cmd>BufferOrderByName<CR>", opts)
+vim.keymap.set("n", "<leader>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
+vim.keymap.set("n", "<leader>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
+vim.keymap.set("n", "<leader>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)

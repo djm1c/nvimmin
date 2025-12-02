@@ -43,8 +43,8 @@ local config = function()
 		ensure_installed = {
 			"clangd",
 			"basedpyright",
-			"vtsls",
-			"vue_ls",
+			-- "vtsls",
+			-- "vue_ls",
 			"lua_ls",
 			"cmake",
 		},
@@ -53,10 +53,10 @@ local config = function()
 	require("mason-tool-installer").setup({
 		ensure_installed = {
 			"ruff",
-			"prettierd",
+			-- "prettierd",
 			"stylua",
 			"beautysh",
-			"eslint_d",
+			-- "eslint_d",
 		},
 	})
 
