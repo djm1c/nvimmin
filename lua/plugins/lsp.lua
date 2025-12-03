@@ -62,7 +62,7 @@ local config = function()
 
 	vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic information" })
 	vim.diagnostic.config({
-		underline = false,
+		underline = true,
 	})
 
 	vim.api.nvim_create_autocmd("LspAttach", {
