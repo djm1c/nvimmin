@@ -8,6 +8,10 @@ return {
 		vim.g.barbar_auto_setup = false
 	end,
 	opts = {
+		-- Sets the maximum padding width with which to surround each tab
+		maximum_padding = 0,
+		-- Sets the minimum padding width with which to surround each tab
+		minimum_padding = 0,
 		animation = false,
 	},
 }
