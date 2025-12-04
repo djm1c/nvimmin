@@ -9,9 +9,9 @@ return {
 	end,
 	opts = {
 		-- Sets the maximum padding width with which to surround each tab
-		maximum_padding = 1,
+		maximum_padding = 0,
 		-- Sets the minimum padding width with which to surround each tab
-		minimum_padding = 1,
+		minimum_padding = 0,
 		animation = false,
 	},
 }

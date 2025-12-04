@@ -85,20 +85,12 @@
 -- 	config = config,
 -- }
 
--- return {
--- 	"sainnhe/gruvbox-material",
--- 	priority = 1000,
--- 	config = function()
--- 		vim.g.gruvbox_material_enable_italic = 0
--- 		vim.g.gruvbox_material_disable_italic_comment = 1
--- 		vim.g.gruvbox_material_foreground = "mix" --'material', 'mix', 'original'
--- 	end,
--- }
-
 return {
-	"Mofiqul/vscode.nvim",
-	priority = 1000, -- make sure to load this before all the other start plugins
+	"sainnhe/gruvbox-material",
+	priority = 1000,
 	config = function()
-		require("vscode").setup({})
+		vim.g.gruvbox_material_enable_italic = 0
+		vim.g.gruvbox_material_disable_italic_comment = 1
+		vim.g.gruvbox_material_foreground = "mix" --'material', 'mix', 'original'
 	end,
 }
