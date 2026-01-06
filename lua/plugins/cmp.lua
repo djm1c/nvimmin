@@ -1,7 +1,6 @@
 local opts = function()
 	local cmp = require("cmp")
 	local luasnip = require("luasnip")
-	local lspkind = require("lspkind")
 
 	return {
 		snippet = {
@@ -47,13 +46,6 @@ local opts = function()
 			{ name = "buffer" },
 			{ name = "path" },
 		},
-		formatting = {
-			format = lspkind.cmp_format({
-				mode = "symbol_text",
-				maxwidth = 50,
-				ellipsis_car = "...",
-			}),
-		},
 
 		-- Add rounded border to floating windows
 		window = {
@@ -73,7 +65,6 @@ return {
 			"hrsh7th/cmp-path",
 			{ "L3MON4D3/LuaSnip", build = "make install_jsregexp" },
 			"saadparwaiz1/cmp_luasnip",
-			"onsails/lspkind.nvim",
 		},
 		opts = opts,
 	},
