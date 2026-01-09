@@ -21,6 +21,8 @@ require("config.autocmds")
 
 vim.opt.termguicolors = true -- True color support
 
+require("config.options")
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
@@ -34,5 +36,3 @@ require("lazy").setup({
 		border = "rounded",
 	},
 })
-
-require("config.options")
